@@ -33,5 +33,5 @@ function decompress(src) {
 }
 
 module.exports = function (src) {
-  return runtimeInit().then(decompress.bind(null, src));
+  return runtimeInit.then(decompress.bind(null, src));
 };

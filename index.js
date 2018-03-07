@@ -1,6 +1,6 @@
 'use strict';
 
-require('promise-polyfill/dist/polyfill');
+require('es6-promise').polyfill();
 
 exports.compress = require('./compress');
 exports.decompress = require('./decompress');

@@ -35,5 +35,5 @@ function compress(src) {
 }
 
 module.exports = function (src) {
-  return runtimeInit().then(compress.bind(null, src));
+  return runtimeInit.then(compress.bind(null, src));
 };
