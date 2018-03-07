@@ -7,6 +7,7 @@ var runtimeInit = new Promise(resolve => {
 });
 
 function decompress(src) {
+
   var inputSize = src.length;
   var inputPtr = em_module._malloc(inputSize);
   var input = em_module.HEAPU8.subarray(inputPtr, inputPtr + inputSize);
